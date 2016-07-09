@@ -1,0 +1,8 @@
+# Site settings
+title: Intro to D3
+baseurl: "/intro-to-d3"
+url: "https://square.github.io/"
+
+# Build settings
+markdown: kramdown
+permalink: pretty

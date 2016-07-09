@@ -1,0 +1,18 @@
+<h1>
+  <a href="{{ "/" | prepend: site.baseurl }}">
+    <img class="jewel" height="30" width="30" src="{{ "/images/square.svg" | prepend: site.baseurl }}" alt="Square" />
+    Intro to D3.js
+  </a>
+</h3>
+
+<ol class="nav">
+  {% for p in site.pages %}
+    {% if p.title %}
+      <li {% if p.url == page.url %} class="active" {% endif %}>
+        <a href="{{ p.url | prepend: site.baseurl }}">
+          {{ p.title }}
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ol>
